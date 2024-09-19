@@ -1,81 +1,98 @@
-/* General Styles */
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
-/* Header Styles */
+/* Header Styling */
 header {
   text-align: center;
   padding: 20px;
-  background-color: white;
-  margin-bottom: 20px;
+  background-color: #fff;
 }
 
-.logo {
-  width: 100px;
+header img {
+  max-width: 150px;
   margin-bottom: 10px;
 }
 
-h1 {
-  color: #002855;
+header h1 {
+  font-size: 2.5em;
   margin: 0;
+  color: #0a3a72;
 }
 
-p {
-  color: #333;
-  font-size: 16px;
+header p {
+  margin: 5px 0;
+  font-size: 1.2em;
 }
 
-/* Button Container */
-.button-container {
-  margin-top: 20px;
-}
-
-.btn-nav, .all-events-btn {
-  background-color: #002855; /* Dark blue */
+/* Button Styles */
+button {
+  display: inline-block;
+  background-color: #0a3a72;
   color: white;
-  border: none;
-  border-radius: 5px;
   padding: 10px 20px;
-  margin: 5px;
-  font-size: 16px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
   cursor: pointer;
 }
 
-.btn-nav:hover, .all-events-btn:hover {
-  background-color: #003d9a; /* Slightly lighter blue */
+button:hover {
+  background-color: #06436b;
 }
 
-.all-events-btn {
-  display: block;
-  margin: 10px auto;
-  font-size: 18px;
+/* Specific Button Styles */
+button#all-events {
+  background-color: #003366;
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
-/* Event Section */
+button#all-events:hover {
+  background-color: #002244;
+}
+
+/* News and Updates Section */
 .updates {
-  padding: 20px;
-  background-color: #fff;
-  margin: 20px;
+  margin-top: 20px;
+  padding: 10px;
 }
 
 .event {
-  margin-bottom: 15px;
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
 }
 
-h2 {
-  color: #002855;
-}
-
-a {
-  color: #003d9a;
+.event a {
+  color: #0a3a72;
   text-decoration: none;
   font-weight: bold;
 }
 
-a:hover {
+.event a:hover {
   text-decoration: underline;
+}
+
+.event p {
+  margin: 5px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  color: #777;
 }
