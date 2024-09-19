@@ -1,61 +1,81 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
+/* Header Styles */
 header {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
 }
 
 h1 {
-    color: #002855;
-}
-
-button {
-    background-color: #002855; /* Navy blue */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-    display: inline-block;
-}
-
-button:hover {
-    background-color: #001a40; /* Darker blue on hover */
-}
-
-.main-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.main-buttons button {
-    margin: 5px;
+  color: #002855;
+  margin: 0;
 }
 
 p {
-    text-align: center;
-    font-size: 18px;
+  color: #333;
+  font-size: 16px;
 }
 
+/* Button Container */
+.button-container {
+  margin-top: 20px;
+}
+
+.btn-nav, .all-events-btn {
+  background-color: #002855; /* Dark blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-nav:hover, .all-events-btn:hover {
+  background-color: #003d9a; /* Slightly lighter blue */
+}
+
+.all-events-btn {
+  display: block;
+  margin: 10px auto;
+  font-size: 18px;
+}
+
+/* Event Section */
 .updates {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px;
 }
 
 .event {
-    border: 1px solid #ccc;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #002855;
+}
+
+a {
+  color: #003d9a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
 }
