@@ -1,44 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Southern New Hampshire Competitive Volleyball Events and Updates">
-  <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
-  <title>Southern New Hampshire Competitive Volleyball</title>
-</head>
-<body>
-  <header>
-    <img src="SNHCVB-app-192x192.png" alt="Southern New Hampshire Volleyball Logo" class="logo">
-    <h1>Southern New Hampshire <br> Competitive Volleyball</h1>
-    <p>Welcome to our events page</p>
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
 
-    <!-- New Button for All Events -->
-    <button class="all-events-btn">All Events</button>
-    
-    <p>Please click the blue events button above to go to our events page on Humanitix to register for our latest events.<br>Below is our news and latest updates:</p>
+header {
+    text-align: center;
+    padding: 20px;
+}
 
-    <!-- Button Group -->
-    <div class="button-container">
-      <button class="btn-nav">Tournaments</button>
-      <button class="btn-nav">Indoor Vball</button>
-      <button class="btn-nav">Outdoor Vball</button>
-      <button class="btn-nav">About</button>
-      <button class="btn-nav">Contact</button>
-    </div>
-  </header>
+.logo {
+    width: 150px;
+}
 
-  <main>
-    <section class="updates">
-      <h2>News and Updates:</h2>
-      <div class="event">
-        <a href="https://events.humanitix.com/09-19-indoor-volleyball-at-girls-inc-of-new-hampshire-nashua-usd12-3hrs?hcxhl=hex-pf1">9/19 Indoor Volleyball at Girls Inc of New Hampshire (Nashua)</a>
-        <p><strong>Date:</strong> September 19, 5:45 PM - 9 PM EDT</p>
-        <p><strong>Location:</strong> Girls Inc of New Hampshire, 27 Burke St, Nashua, NH 03060, USA</p>
-      </div>
-      <!-- Add additional events as needed -->
-    </section>
-  </main>
-</body>
-</html>
+h1 {
+    color: #002855;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Buttons styling */
+button {
+    background-color: #002855;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #013a63;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Button container styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Event section styling */
+.updates {
+    margin: 20px 0;
+}
+
+.event {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event a {
+    color: #002855;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.event a:hover {
+    text-decoration: underline;
+}
+
+.event p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #002
