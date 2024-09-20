@@ -17,11 +17,14 @@ ul.menu li {
     display: inline-block; /* Ensure the menu items are aligned horizontally */
 }
 
+/* Adjusted Navigation Menu for Reduced Spacing */
 ul.menu li a {
     text-decoration: none;
-    padding: 10px 20px;
-    color: white; /* White text to contrast with blue background */
+    padding: 8px 15px; /* Reduce padding for a tighter look */
+    color: white;
     font-weight: bold;
+}
+
 }
 
 ul.menu li a:hover {
