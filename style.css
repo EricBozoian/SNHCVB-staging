@@ -1,4 +1,4 @@
-/* General page styling */
+/* General styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +7,7 @@ body {
     color: #333;
 }
 
+/* Header and logo */
 header {
     text-align: center;
     padding: 20px;
@@ -14,65 +15,60 @@ header {
 
 .logo {
     width: 150px;
+    max-width: 100%;
 }
 
 h1 {
     color: #002855;
+    margin-bottom: 10px;
 }
 
 p {
     font-size: 16px;
 }
 
-.events-btn {
-    background-color: #002855;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 10px;
-    margin: 10px;
-    cursor: pointer;
-}
-
-.events-btn:hover {
-    background-color: #013a63;
-}
-
-nav {
-    background-color: #002855;
-    padding: 10px 0;
-}
-
-.nav-menu {
+/* Navbar styling */
+.navbar {
     display: flex;
     justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    background-color: #002855;
+    padding: 10px 0;
+    flex-wrap: wrap;
 }
 
-.nav-menu li {
-    margin: 0 20px;
-}
-
-.nav-menu a {
+.navbar a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
     padding: 10px 20px;
-    display: block;
+    font-size: 16px;
+    text-align: center;
 }
 
-.nav-menu a:hover {
+.navbar a:hover {
+    background-color: #014a63;
+}
+
+.navbar a:focus {
+    outline: none;
     background-color: #013a63;
-    border-radius: 10px;
+}
+
+/* Mobile responsive navigation */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        width: 100%;
+        padding: 15px;
+    }
 }
 
 /* Event section styling */
 .updates {
-    margin: 20px auto;
-    max-width: 800px;
+    margin: 20px 0;
+    text-align: center;
 }
 
 .event {
@@ -84,8 +80,15 @@ nav {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.event h3 {
+.event a {
     color: #002855;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.event a:hover {
+    text-decoration: underline;
 }
 
 .event p {
