@@ -1,106 +1,55 @@
-/* General styling */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-/* Header and logo */
+/* Header Styles */
 header {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
-.logo {
-    width: 150px;
-    max-width: 100%;
+header img {
+  width: 150px;
+  height: auto;
 }
 
-h1 {
-    color: #002855;
-    margin-bottom: 10px;
+/* Navigation Bar */
+nav {
+  background-color: #002855;
+  overflow: hidden;
 }
 
-p {
-    font-size: 16px;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-/* Navbar styling */
-.navbar {
-    display: flex;
-    justify-content: center;
-    background-color: #002855;
-    padding: 10px 0;
-    flex-wrap: wrap;
+nav ul li {
+  display: inline-block;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-align: center;
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
 }
 
-.navbar a:hover {
-    background-color: #014a63;
+nav ul li a:hover {
+  background-color: #013a63;
 }
 
-.navbar a:focus {
-    outline: none;
-    background-color: #013a63;
-}
-
-/* Mobile responsive navigation */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-    }
-
-    .navbar a {
-        width: 100%;
-        padding: 15px;
-    }
-}
-
-/* Event section styling */
-.updates {
-    margin: 20px 0;
-    text-align: center;
-}
-
-.event {
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 15px 0;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.event a {
-    color: #002855;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.event a:hover {
-    text-decoration: underline;
-}
-
-.event p {
-    margin: 5px 0;
-    font-size: 14px;
-    color: #333;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #002855;
-    color: white;
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+  nav ul li {
+    display: block;
+  }
 }
