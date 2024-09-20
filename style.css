@@ -43,7 +43,7 @@ button.all-events:hover {
 /* Navigation Menu */
 nav {
     background-color: #002855;
-    padding: 8px 0;
+    padding: 10px;
 }
 
 ul.menu {
@@ -61,7 +61,7 @@ ul.menu li {
 
 ul.menu li a {
     text-decoration: none;
-    padding: 5px 12px; /* Reduced padding for compact spacing */
+    padding: 8px 15px; /* Reduced padding for compact spacing */
     color: white;
     font-weight: bold;
 }
