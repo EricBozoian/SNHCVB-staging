@@ -19,7 +19,7 @@ ul.menu li {
 
 ul.menu li a {
     text-decoration: none;
-    padding: 8px 15px;
+    padding: 10px 20px;
     color: white; /* White text to contrast with blue background */
     font-weight: bold;
 }
