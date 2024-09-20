@@ -1,7 +1,7 @@
 /* Navigation Menu */
 nav {
     background-color: #002855;
-    padding: 5px 0;  /* Reduce padding around the navigation bar */
+    padding: 0;  /* Remove additional padding */
 }
 
 ul.menu {
@@ -9,17 +9,16 @@ ul.menu {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;  /* Center the menu items */
 }
 
 ul.menu li {
-    position: relative;
     display: inline-block;
 }
 
 ul.menu li a {
     text-decoration: none;
-    padding: 4px 10px;  /* Further reduced padding for compact look */
+    padding: 10px 20px;  /* Proper spacing for menu items */
     color: white;
     font-weight: bold;
 }
