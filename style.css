@@ -1,4 +1,4 @@
-/* General Styles */
+/* General page styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,35 +7,57 @@ body {
   color: #333;
 }
 
-/* Header Styles */
 header {
   text-align: center;
   padding: 20px;
 }
 
-header img {
+.logo {
   width: 150px;
-  height: auto;
 }
 
-/* Navigation Bar */
-nav {
+h1 {
+  color: #002855;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* Events button styling */
+.events-btn {
+  background-color: #002855;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.events-btn:hover {
+  background-color: #013a63;
+}
+
+/* Navbar styling */
+.navbar {
   background-color: #002855;
   overflow: hidden;
 }
 
-nav ul {
-  list-style: none;
+.navbar ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-nav ul li {
-  display: inline-block;
+.navbar li {
+  position: relative;
 }
 
-nav ul li a {
+.navbar a {
   display: block;
   color: white;
   text-align: center;
@@ -43,13 +65,65 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li a:hover {
+.navbar a:hover {
   background-color: #013a63;
 }
 
-/* Mobile responsiveness */
-@media screen and (max-width: 600px) {
-  nav ul li {
-    display: block;
-  }
+/* Dropdown styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #002855;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #013a63;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Event section styling */
+.updates {
+  margin: 20px;
+  text-align: center;
+}
+
+.event {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event h3 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.event p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #002855;
+  color: white;
 }
