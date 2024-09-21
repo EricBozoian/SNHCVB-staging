@@ -174,9 +174,14 @@ footer {
   }
 
   /* Make the menu items stack vertically */
-  nav ul {
-    display: block;
-  }
+nav ul {
+    background-color: #002855;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style-type: none;
+    width: 90%; /* For mobile devices */
+    margin: 0 auto; /* Center the navigation bar */
 
   nav ul li {
     display: block; /* Ensure each item is a block element */
