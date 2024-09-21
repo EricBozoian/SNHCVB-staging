@@ -177,28 +177,28 @@ footer {
         padding: 10px; /* Adjust padding for mobile */
         margin-left: auto; 
         margin-right: auto;
-    /* Media query for screens smaller than 600px (mobile) */
+    /* Media query for mobile devices (screen width 600px or smaller) */
 @media only screen and (max-width: 600px) {
-  /* Adjust the footer and navbar for mobile */
-  footer, .navbar {
-    width: 100%; /* Ensures full width on mobile */
-    padding: 15px; /* Padding to ensure it's comfortable to touch */
-  }
+    /* Make the footer and menu bars full width */
+    footer, .navbar {
+        width: 100%; /* Ensures the bars span the full width on mobile */
+        padding: 15px; /* Adjust padding for better touch accessibility */
+    }
 
-  /* Make the menu items stack vertically */
-  .navbar ul {
-    display: block; /* Stacks the menu items */
-  }
-  .navbar li {
-    margin: 5px 0; /* Adds space between items */
-  }
+    /* Make the menu items stack vertically */
+    .navbar ul {
+        display: block; /* Stacks the menu items vertically */
+    }
 
-  /* Ensure buttons like 'All Events' fit the width */
-  .button {
-    width: 100%; /* Full-width buttons for mobile */
-    font-size: 1.2rem; /* Adjust font size for readability */
-  }
+    .navbar li {
+        margin: 5px 0; /* Adds space between menu items */
+    }
+
+    /* Ensure buttons like 'All Events' fit the width */
+    .button {
+        width: 100%; /* Full-width buttons for mobile */
+        font-size: 1.2rem; /* Adjust font size for readability */
+    }
 }
-
 
 
