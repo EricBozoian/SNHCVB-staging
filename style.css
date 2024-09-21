@@ -63,18 +63,23 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Event box styling */
+/* Update the .updates class to ensure proper alignment */
 .updates {
     margin-top: 20px;
+    text-align: center;
 }
 
+/* Update the .event class for better block appearance */
 .event {
     background-color: #fff;
     border: 2px solid #ccc;
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
+    display: inline-block;
+    width: 80%; /* Adjust the width to be smaller for a block effect */
     text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .event a {
