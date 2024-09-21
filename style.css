@@ -183,6 +183,7 @@ footer {
   footer, .navbar {
     width: 100%; /* Ensures the bars span the full width on mobile */
     padding: 15px; /* Adjust padding for mobile */
+    overflow: hidden; /* Prevents content from overflowing */
   }
   
   /* Adjust the menu for mobile - making it stack vertically */
