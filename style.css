@@ -152,3 +152,12 @@ footer {
     background-color: #002855;
     color: white;
 }
+/* Media query for mobile devices (screen width 600px or smaller) */
+@media only screen and (max-width: 600px) {
+    .event {
+        width: 90%; /* Adjust width for mobile */
+        padding: 10px; /* Adjust padding for mobile */
+        margin-left: auto; 
+        margin-right: auto;
+    }
+}
