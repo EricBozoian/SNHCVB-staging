@@ -77,7 +77,7 @@ h2 {
     padding: 10px; /* Reduced padding for a smaller box */
     margin-bottom: 10px; /* Reduced margin for smaller spacing */
     display: inline-block;
-    width: 80%; /* Keep block width */
+    width: 50%; /* Keep block width */
     text-align: left;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
