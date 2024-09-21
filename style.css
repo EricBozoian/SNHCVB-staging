@@ -109,7 +109,7 @@ nav ul {
     justify-content: center;
     padding: 0;
     list-style-type: none;
-    width: 80%; /* Set width of the navigation bar */
+    width: 50%; /* Set width of the navigation bar */
     margin: 0 auto; /* Center the navigation bar */
 }
 
@@ -167,7 +167,7 @@ footer {
     padding: 10px; /* Adjust padding for smaller height */
     background-color: #002855;
     color: white;
-    width: 80%; /* Set width of the footer */
+    width: 50%; /* Set width of the footer */
     margin: 0 auto; /* Center the footer */
 }
 /* Media query for mobile devices (screen width 600px or smaller) */
