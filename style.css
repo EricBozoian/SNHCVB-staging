@@ -101,7 +101,7 @@ nav ul {
     justify-content: center;
     padding: 0;
     list-style-type: none;
-    width: 50%; /* Set width of the navigation bar */
+    width: 50%; /* For Desktop */
     margin: 0 auto; /* Center the navigation bar */
 }
 
@@ -153,10 +153,9 @@ footer {
     padding: 10px;
     background-color: #002855;
     color: white;
-    width: 50%; /* Set width of the footer */
+    width: 50%; /* For Desktop */
     margin: 0 auto; /* Center the footer */
 }
-
 /* Media query for mobile devices (screen width 600px or smaller) */
 @media only screen and (max-width: 600px) {
     /* Adjust event boxes for mobile */
@@ -172,7 +171,6 @@ footer {
         width: 100%; 
         padding: 15px;
     }
-
     /* Make the menu items stack vertically */
     .navbar ul {
         display: block;
@@ -186,16 +184,10 @@ footer {
     .button {
         width: 100%;
         font-size: 1.2rem;
-    }
-}
-
-/* Additional mobile media query for smaller screens */
-@media only screen and (max-width: 480px) {
-    /* Ensure content is more mobile-friendly */
+    }    
     h1 {
         font-size: 1.5rem;
     }
-
     button {
         width: 80%;
     }
