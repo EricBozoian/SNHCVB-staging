@@ -167,16 +167,16 @@ footer {
     }
 
     /* Adjust footer and navbar for mobile */
-    footer, .navbar {
+    footer, nav ul {
         width: 100%; 
         padding: 15px;
     }
     /* Make the menu items stack vertically */
-    .navbar ul {
+    nav ul {
         display: block;
     }
 
-    .navbar li {
+    .nav ul {
         margin: 5px 0;
     }
 
