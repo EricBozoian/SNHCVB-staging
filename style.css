@@ -179,27 +179,26 @@ footer {
         margin-right: auto;
     /* Media query for screens smaller than 600px (mobile) */
 @media only screen and (max-width: 600px) {
-  /* Make the footer and menu bars full width */
+  /* Adjust the footer and navbar for mobile */
   footer, .navbar {
-    width: 100%; /* Ensures the bars span the full width on mobile */
-    padding: 15px; /* Adjust padding for mobile */
-    overflow: hidden; /* Prevents content from overflowing */
-  }
-  
-  /* Adjust the menu for mobile - making it stack vertically */
-  .navbar ul {
-    display: block; /* Forces the menu to be stacked */
-  }
-  
-  .navbar li {
-    margin: 5px 0; /* Adds spacing between stacked menu items */
+    width: 100%; /* Ensures full width on mobile */
+    padding: 15px; /* Padding to ensure it's comfortable to touch */
   }
 
-  /* Ensure buttons and other elements fit better */
+  /* Make the menu items stack vertically */
+  .navbar ul {
+    display: block; /* Stacks the menu items */
+  }
+  .navbar li {
+    margin: 5px 0; /* Adds space between items */
+  }
+
+  /* Ensure buttons like 'All Events' fit the width */
   .button {
-    width: 100%; /* Makes buttons like 'All Events' span full width */
-    font-size: 1.2rem; /* Adjust the font size */
+    width: 100%; /* Full-width buttons for mobile */
+    font-size: 1.2rem; /* Adjust font size for readability */
   }
 }
+
 
 
