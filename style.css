@@ -1,4 +1,4 @@
-/* General page styles (from style (2) (1)) */
+/* General page styles */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -33,7 +33,7 @@ p {
     font-size: 1em;
 }
 
-/* Button styles (from style (2) (1)) */
+/* Button styles */
 .btn {
     background-color: #003366;
     color: white;
@@ -74,8 +74,8 @@ h2 {
     background-color: #fff;
     border: 2px solid #ccc;
     border-radius: 5px;
-    padding: 10px; /* Reduced padding for a smaller box */
-    margin-bottom: 10px; /* Reduced margin for smaller spacing */
+    padding: 10px;
+    margin-bottom: 10px;
     display: inline-block;
     width: 30%; /* Keep block width */
     text-align: left;
@@ -94,15 +94,7 @@ h2 {
     color: #333;
 }
 
-/* Menu styles (from style (10)) */
-nav ul {
-    background-color: #002855;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    list-style-type: none;
-}
-
+/* Menu styles */
 nav ul {
     background-color: #002855;
     display: flex;
@@ -158,47 +150,53 @@ nav ul li ul li a:hover {
 /* Footer */
 footer {
     text-align: center;
-    padding: 1px;
-    background-color: #002855;
-    color: white;
-}
-footer {
-    text-align: center;
-    padding: 10px; /* Adjust padding for smaller height */
+    padding: 10px;
     background-color: #002855;
     color: white;
     width: 50%; /* Set width of the footer */
     margin: 0 auto; /* Center the footer */
 }
+
 /* Media query for mobile devices (screen width 600px or smaller) */
 @media only screen and (max-width: 600px) {
+    /* Adjust event boxes for mobile */
     .event {
-        width: 90%; /* Adjust width for mobile */
-        padding: 10px; /* Adjust padding for mobile */
-        margin-left: auto; 
+        width: 90%; 
+        padding: 10px;
+        margin-left: auto;
         margin-right: auto;
-    /* Media query for mobile devices (screen width 600px or smaller) */
-@media only screen and (max-width: 600px) {
-    /* Make the footer and menu bars full width */
+    }
+
+    /* Adjust footer and navbar for mobile */
     footer, .navbar {
-        width: 100%; /* Ensures the bars span the full width on mobile */
-        padding: 15px; /* Adjust padding for better touch accessibility */
+        width: 100%; 
+        padding: 15px;
     }
 
     /* Make the menu items stack vertically */
     .navbar ul {
-        display: block; /* Stacks the menu items vertically */
+        display: block;
     }
 
     .navbar li {
-        margin: 5px 0; /* Adds space between menu items */
+        margin: 5px 0;
     }
 
     /* Ensure buttons like 'All Events' fit the width */
     .button {
-        width: 100%; /* Full-width buttons for mobile */
-        font-size: 1.2rem; /* Adjust font size for readability */
+        width: 100%;
+        font-size: 1.2rem;
     }
 }
 
+/* Additional mobile media query for smaller screens */
+@media only screen and (max-width: 480px) {
+    /* Ensure content is more mobile-friendly */
+    h1 {
+        font-size: 1.5rem;
+    }
 
+    button {
+        width: 80%;
+    }
+}
