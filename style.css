@@ -177,5 +177,28 @@ footer {
         padding: 10px; /* Adjust padding for mobile */
         margin-left: auto; 
         margin-right: auto;
-    }
+    /* Media query for screens smaller than 600px (mobile) */
+@media only screen and (max-width: 600px) {
+  /* Make the footer and menu bars full width */
+  footer, .navbar {
+    width: 100%; /* Ensures the bars span the full width on mobile */
+    padding: 15px; /* Adjust padding for mobile */
+  }
+  
+  /* Adjust the menu for mobile - making it stack vertically */
+  .navbar ul {
+    display: block; /* Forces the menu to be stacked */
+  }
+  
+  .navbar li {
+    margin: 5px 0; /* Adds spacing between stacked menu items */
+  }
+
+  /* Ensure buttons and other elements fit better */
+  .button {
+    width: 100%; /* Makes buttons like 'All Events' span full width */
+    font-size: 1.2rem; /* Adjust the font size */
+  }
 }
+
+
