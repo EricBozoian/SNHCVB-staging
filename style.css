@@ -122,25 +122,32 @@ nav ul li a:hover {
     background-color: #00509e;
 }
 
+/* Main dropdown styling */
 nav ul li ul {
     display: none;
     position: absolute;
     background-color: #002855;
+    width: auto; /* Adjusts the width automatically to the content */
+    padding: 10px; /* Adds some padding around the content */
 }
 
+/* Hover state to display the dropdown */
 nav ul li:hover ul {
     display: block;
 }
 
+/* Adjust the nested dropdown width */
 nav ul li ul li {
-    width: 200px;
+    width: auto; /* Let the width adjust based on content */
 }
 
+/* Style for the anchor links in the dropdown */
 nav ul li ul li a {
     display: block;
-    padding: 10px;
+    padding: 5px 15px; /* Adjusts the padding inside each link */
     background-color: #002855;
     color: white;
+    white-space: nowrap; /* Prevents the text from wrapping */
 }
 
 nav ul li ul li a:hover {
