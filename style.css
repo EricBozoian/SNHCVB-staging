@@ -29,10 +29,11 @@ h1 {
 }
 
 p {
-    color: #666;
-    font-size: 1em;
+  color: #666;
+  font-size: 1em;
+  word-wrap: break-word; /* Ensures long words wrap */
+  max-width: 100%; /* Ensures the paragraph width doesn't exceed its container */
 }
-
 /* Button styles */
 .btn {
     background-color: #003366;
