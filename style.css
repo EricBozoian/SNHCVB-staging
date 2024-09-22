@@ -28,6 +28,12 @@ h1 {
     color: #003366;
 }
 
+.container {
+   width: 80%; /* Adjust width as needed */
+   margin: 0 auto;
+   text-align: left; /* Optional, can adjust text alignment */
+}
+
 p {
   color: #666;
   font-size: 1em;
