@@ -289,7 +289,7 @@ footer {
     font-size: 1.1em;
 }
 ul {
-  list-style-position: outside; /* Moves bullets outside the list text */
+  list-style-position: inside; /* Moves bullets outside the list text */
   padding-left: 20px; /* Adds some padding for better spacing */
   margin-left: 0;
 }
