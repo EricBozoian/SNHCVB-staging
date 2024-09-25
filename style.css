@@ -337,7 +337,11 @@ li {
     max-width: 800px; /* Restricts the width to 800px */
     margin: 0 auto; /* Centers the section on the page */
     padding: 20px; /* Optional: Adds padding inside for better spacing */
-    text-align: left; /* Ensures the text is aligned to the left */
+    text-align: center; /* Center-aligns the heading */
+}
+
+.about-league p {
+    text-align: left; /* Ensures the paragraph remains left-aligned */
 }
 @keyframes fade {
   from {opacity: .4} 
