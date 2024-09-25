@@ -343,6 +343,16 @@ li {
 .about-league p {
     text-align: left; /* Ensures the paragraph remains left-aligned */
 }
+.playoff-textbox {
+    max-width: 800px; /* Restricts the width to 800px */
+    margin: 0 auto; /* Centers the section on the page */
+    padding: 20px; /* Optional: Adds padding inside for better spacing */
+    text-align: center; /* Center-aligns the heading */
+}
+
+.playoff-textbox p {
+    text-align: left; /* Ensures the paragraph remains left-aligned */
+}
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
