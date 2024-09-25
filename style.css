@@ -191,35 +191,36 @@ footer {
 
 /* Style the next and previous buttons specifically for the calendar */
 #calendar-slideshow .prev, #calendar-slideshow .next {
-  cursor: pointer;
+   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: black; /* Change to black */
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px; /* Increase the size of the arrow */
+  border-radius: 3px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
+  background-color: rgba(255, 255, 255, 0.5); /* Optional: Add a light background */
 }
 
-/* Position the "previous" button on the left */
-#calendar-slideshow .prev {
-  left: 0;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* Position the "next" button on the right */
-#calendar-slideshow .next {
-  right: 0;
+/* Position the "prev button" to the left */
+.prev {
+  left: 0;
   border-radius: 0 3px 3px 0;
 }
 
-/* Add a hover effect for the buttons */
-#calendar-slideshow .prev:hover, #calendar-slideshow .next:hover {
-  background-color: rgba(0,0,0,0.8);
+/* On hover, add a background color to the arrows */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8); /* Darken the background on hover */
 }
 
 }
