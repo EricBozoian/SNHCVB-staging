@@ -303,6 +303,36 @@ ul ul {
 li {
     margin-left: 0; /* Ensures the list item doesn't add extra space */
 }
+/* Add styling for the container */
+.info-box {
+    max-width: 400px; /* Control the width of the container */
+    margin: 0 auto; /* Centers the box horizontally */
+    padding: 20px; /* Adds padding around the content */
+    background-color: #f8f8f8; /* Optional: Add a background color */
+    border-radius: 8px; /* Optional: Round the corners */
+    text-align: left; /* Ensures the text is aligned to the left */
+    border: 1px solid #ccc; /* Optional: Border around the box */
+}
+
+/* Style for the unordered list */
+.info-box ul {
+    list-style-position: inside; /* Bullets will be inside the list item */
+    padding-left: 20px; /* Adds consistent padding inside */
+    margin-left: 0; /* Ensures no extra margins */
+}
+
+/* Nested unordered list */
+.info-box ul ul {
+    list-style-type: disc; /* Keep the default disc style for sub-bullets */
+    margin-left: 20px; /* Ensures the sub-list indents correctly */
+    padding-left: 20px;
+}
+
+/* List item styles */
+.info-box li {
+    margin: 5px 0; /* Adds spacing between list items */
+    line-height: 1.5em; /* Adds line height for readability */
+}
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
