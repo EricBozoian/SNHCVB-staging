@@ -333,6 +333,12 @@ li {
     margin: 5px 0; /* Adds spacing between list items */
     line-height: 1.5em; /* Adds line height for readability */
 }
+.about-league {
+    max-width: 800px; /* Restricts the width to 800px */
+    margin: 0 auto; /* Centers the section on the page */
+    padding: 20px; /* Optional: Adds padding inside for better spacing */
+    text-align: left; /* Ensures the text is aligned to the left */
+}
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
