@@ -289,11 +289,10 @@ footer {
     font-size: 1.1em;
 }
 ul {
-    list-style-position: inside; /* This ensures the bullets are inside the list box */
-    margin: 0; /* Adjust margins to remove unnecessary space */
-    padding-left: 20px; /* Adjust padding if needed to align bullets */
+    list-style-position: inside; /* Makes the bullet appear inside the list item */
+    padding-left: 0; /* Removes left padding */
+    margin-left: 0; /* Removes left margin */
 }
-
 li {
     margin-left: 0; /* Make sure there’s no extra left margin on the list items */
 }
