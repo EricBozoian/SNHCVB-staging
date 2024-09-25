@@ -289,19 +289,19 @@ footer {
     font-size: 1.1em;
 }
 ul {
-  list-style-position: inside; /* Moves bullets outside the list text */
-  padding-left: 20px; /* Adds some padding for better spacing */
-  margin-left: 0;
+    list-style-position: inside; /* Moves bullets inside the list item */
+    padding-left: 0; /* Resets any extra padding */
+    margin-left: 20px; /* Adds a margin to indent the list */
 }
 
 ul ul {
-  list-style-type: disc; /* Keeps sub-list bullets as discs */
-  padding-left: 40px; /* Increases padding for sub-lists */
-  margin-left: 0;
+    list-style-type: disc; /* Ensures the sub-list has the correct bullet style */
+    padding-left: 20px; /* Indents the sub-lists properly */
+    margin-left: 0;
 }
 
 li {
-  margin-left: 0;
+    margin-left: 0; /* Ensures the list item doesn't add extra space */
 }
 @keyframes fade {
   from {opacity: .4} 
