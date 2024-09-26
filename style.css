@@ -353,6 +353,16 @@ li {
 .playoff-textbox p {
     text-align: left; /* Ensures the paragraph remains left-aligned */
 }
+.league-schedule {
+    max-width: 800px; /* Limits the width to 800px */
+    margin: 0 auto; /* Centers the section on the page */
+    padding: 20px; /* Optional: Adds padding for better spacing */
+    text-align: center; /* Centers the heading */
+}
+
+.league-schedule p {
+    text-align: left; /* Ensures the paragraph remains left-aligned */
+}
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
