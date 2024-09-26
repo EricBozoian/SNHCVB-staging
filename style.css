@@ -1,3 +1,74 @@
+/* Media query for mobile devices (screen width 600px or smaller) */
+@media only screen and (max-width: 600px) {
+   body {
+      background-color: yellow; /* For testing */
+   }
+  /* Adjust event boxes for mobile */
+  .event {
+    width: 90%; !important;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    body {
+    background-color: yellow; !important;
+    }
+  /* Adjust footer and navbar for mobile */
+  footer, nav ul {
+    width: 100%;
+    padding: 15px;
+  }
+
+  /* Make the menu items stack vertically */
+ nav ul {
+      flex-direction: column; /* Make the items stack vertically */
+      width: 100%; /* Use full width on mobile */
+   }
+   nav ul li {
+      margin: 10px 0; /* Add spacing between items */
+   }
+   nav ul li a {
+      font-size: 0.9rem; /* Reduce font size for mobile */
+   }
+  nav ul li {
+    display: block; /* Ensure each item is a block element */
+    margin: 5px 0; /* Add space between menu items */
+  }
+
+  /* Ensure buttons like 'All Events' fit the width */
+  .button {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 80%;
+  }
+     .contact-box {
+      max-width: 90%; /* Reduce the width of the contact box on mobile */
+      margin: 20px auto; /* Add margin for spacing on mobile */
+   }
+
+   .contact-content img {
+      width: 80px; /* Adjust the size of the image */
+      height: 80px;
+   }
+
+   .contact-content p {
+      font-size: 0.9rem; /* Reduce font size for mobile readability */
+   }
+    .container, main, .about-league, .playoff-textbox, .league-schedule {
+      padding: 10px; /* Reduce padding for smaller screens */
+   }
+   .contact-item {
+      width: 100%; /* Ensure contact items fit the width of the mobile screen */
+      margin-bottom: 20px; /* Add margin between items */
+   }
+}
 /* General page styles */
 body {
     font-family: Arial, sans-serif;
@@ -411,75 +482,4 @@ li {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
-}
-/* Media query for mobile devices (screen width 600px or smaller) */
-@media only screen and (max-width: 600px) {
-   body {
-      background-color: yellow; /* For testing */
-   }
-  /* Adjust event boxes for mobile */
-  .event {
-    width: 90%; !important;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-    body {
-    background-color: yellow; !important;
-    }
-  /* Adjust footer and navbar for mobile */
-  footer, nav ul {
-    width: 100%;
-    padding: 15px;
-  }
-
-  /* Make the menu items stack vertically */
- nav ul {
-      flex-direction: column; /* Make the items stack vertically */
-      width: 100%; /* Use full width on mobile */
-   }
-   nav ul li {
-      margin: 10px 0; /* Add spacing between items */
-   }
-   nav ul li a {
-      font-size: 0.9rem; /* Reduce font size for mobile */
-   }
-  nav ul li {
-    display: block; /* Ensure each item is a block element */
-    margin: 5px 0; /* Add space between menu items */
-  }
-
-  /* Ensure buttons like 'All Events' fit the width */
-  .button {
-    width: 100%;
-    font-size: 1.2rem;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  button {
-    width: 80%;
-  }
-     .contact-box {
-      max-width: 90%; /* Reduce the width of the contact box on mobile */
-      margin: 20px auto; /* Add margin for spacing on mobile */
-   }
-
-   .contact-content img {
-      width: 80px; /* Adjust the size of the image */
-      height: 80px;
-   }
-
-   .contact-content p {
-      font-size: 0.9rem; /* Reduce font size for mobile readability */
-   }
-    .container, main, .about-league, .playoff-textbox, .league-schedule {
-      padding: 10px; /* Reduce padding for smaller screens */
-   }
-   .contact-item {
-      width: 100%; /* Ensure contact items fit the width of the mobile screen */
-      margin-bottom: 20px; /* Add margin between items */
-   }
 }
