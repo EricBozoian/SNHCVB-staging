@@ -390,15 +390,15 @@ li {
     margin-bottom: 20px; /* Adds more space below the boxes */
 }
 .contact-box {
-    border: 2px solid #000; /* Add your preferred border style */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Padding inside the box */
+    border: 2px solid #000; /* Keep the existing border style */
+    border-radius: 10px; /* Keep the rounded corners */
+    padding: 20px; /* Keep the padding inside the box */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 400px; /* Set a max width to control the box size */
-    margin: 0 auto; /* Center the box horizontally */
+    max-width: 400px; /* Max width for the box */
+    margin: 0 auto 50px; /* This adds 50px space between the contact box and the footer */
 }
 
 .contact-content img {
