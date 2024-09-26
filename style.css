@@ -408,6 +408,9 @@ li {
     margin: 5px 0; /* Adjust spacing between text lines */
     text-align: center; /* Center the text */
 }
+body {
+   background-color: red;
+}
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
