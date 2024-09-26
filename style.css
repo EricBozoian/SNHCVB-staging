@@ -51,7 +51,6 @@ p {
     display: inline-block;
     margin-bottom: 20px;
 }
-
 .btn:hover {
     background-color: #00509e;
 }
@@ -425,7 +424,7 @@ li {
     body {
     background-color: yellow;
     }
-
+}
   /* Adjust footer and navbar for mobile */
   footer, nav ul {
     width: 100%;
