@@ -1,5 +1,5 @@
-/* Media query for mobile devices (screen width 600px or smaller) */
-@media only screen and (max-width: 600px) {
+/* Media query for mobile devices (screen width 800px or smaller) */
+@media only screen and (max-width: 800px) {
    body {
       background-color: yellow; /* For testing */
    }
