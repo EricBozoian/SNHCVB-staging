@@ -408,15 +408,15 @@ li {
     margin: 5px 0; /* Adjust spacing between text lines */
     text-align: center; /* Center the text */
 }
-body {
-   background-color: red;
-}
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 /* Media query for mobile devices (screen width 600px or smaller) */
-@media only screen and (max-width: 800px) {
-  
+@media only screen and (max-width: 600px) {
+   body {
+      background-color: yellow; /* For testing */
+   }
+}
   /* Adjust event boxes for mobile */
   .event {
     width: 90%; !important;
