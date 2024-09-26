@@ -382,9 +382,8 @@ li {
 
 .contact-container {
     display: flex;
-    justify-content: space-around; /* This brings the boxes closer together */
-    align-items: center;
-    margin-bottom: 50px; /* Adds space between boxes and footer */
+    justify-content: center;
+    gap: 5px; /* manually set the spacing between items */
 }
 
 .contact-container .contact-item {
