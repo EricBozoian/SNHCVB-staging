@@ -140,19 +140,6 @@ h2 {
     text-align: center;
 }
 
-/* Adjusted .event class for more compact appearance */
-.event {
-    background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-    display: inline-block;
-    width: 30%; /* Keep block width */
-    text-align: left;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
 .event a {
     font-size: 1.2em;
     font-weight: bold;
