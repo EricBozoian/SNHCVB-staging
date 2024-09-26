@@ -422,6 +422,9 @@ li {
     margin-left: auto;
     margin-right: auto;
   }
+    body {
+    background-color: yellow;
+    }
 
   /* Adjust footer and navbar for mobile */
   footer, nav ul {
