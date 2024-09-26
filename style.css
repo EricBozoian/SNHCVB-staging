@@ -416,7 +416,6 @@ li {
    body {
       background-color: yellow; /* For testing */
    }
-}
   /* Adjust event boxes for mobile */
   .event {
     width: 90%; !important;
@@ -427,7 +426,6 @@ li {
     body {
     background-color: yellow; !important;
     }
-}
   /* Adjust footer and navbar for mobile */
   footer, nav ul {
     width: 100%;
