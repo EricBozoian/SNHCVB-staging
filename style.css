@@ -411,6 +411,7 @@ li {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
 /* Media query for mobile devices (screen width 600px or smaller) */
 @media only screen and (max-width: 600px) {
    body {
