@@ -389,6 +389,26 @@ li {
 .contact-container .contact-item {
     margin-bottom: 20px; /* Adds more space below the boxes */
 }
+.contact-box {
+    border: 2px solid #000; /* Add your preferred border style */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px; /* Set a max width to control the box size */
+    margin: 0 auto; /* Center the box horizontally */
+}
+
+.contact-content img {
+    margin-bottom: 10px; /* Space between the image and the text */
+}
+
+.contact-content p {
+    margin: 5px 0; /* Adjust spacing between text lines */
+    text-align: center; /* Center the text */
+}
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
