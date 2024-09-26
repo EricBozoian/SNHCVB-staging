@@ -363,6 +363,31 @@ li {
 .league-schedule p {
     text-align: left; /* Ensures the paragraph remains left-aligned */
 }
+.contact-item {
+    width: 40%; /* Adjust width as needed */
+    padding: 20px; /* Keeps content inside boxes spaced nicely */
+    border: 2px solid navy; /* Keeps the border of the boxes */
+    border-radius: 10px; /* Smooths the edges of the boxes */
+    margin: 20px; /* Adds margin around each box */
+}
+
+.contact-item img {
+    width: 100px; /* Size of the icons */
+    height: 100px;
+    display: block;
+    margin: 0 auto 10px auto; /* Centers the image horizontally */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between; /* Adds space between the boxes */
+    align-items: center; /* Ensures both boxes are vertically aligned */
+    margin-bottom: 50px; /* Adds space between boxes and footer */
+}
+
+.contact-container .contact-item {
+    margin-bottom: 20px; /* Adds more space below the boxes */
+}
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
