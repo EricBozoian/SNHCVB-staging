@@ -12,7 +12,9 @@
     width: 100%;
     padding: 15px;
   }
-
+  .team-box {
+        flex: 1 1 100%; /* Stacks boxes vertically for smaller screens */
+    }
   /* Make the menu items stack vertically */
  nav ul {
       flex-direction: column; /* Make the items stack vertically */
@@ -469,4 +471,18 @@ img {
     height: auto;
     object-fit: cover;  /* Ensures the image retains its aspect ratio */
 }
+/* Container styles for team rosters */
+.team-rosters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Space between the boxes */
+}
 
+.team-box {
+    flex: 1 1 calc(33.33% - 20px); /* 3 boxes per row with some spacing */
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
