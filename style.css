@@ -467,4 +467,6 @@ li {
 img {
     max-width: 100%;
     height: auto;
+    object-fit: cover;  /* Ensures the image retains its aspect ratio */
 }
+
