@@ -6,6 +6,7 @@
     <title>Southern New Hampshire Competitive Volleyball</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
 </head>
 <body>
     <header>
@@ -45,16 +46,35 @@
     <!-- News and Updates Section -->
     <section class="updates">
         <h2>News and Updates:</h2>
-        <div class="event">
-            <a href="#">9/19 Indoor Volleyball at Girls Inc of New Hampshire (Nashua)</a>
-            <p><strong>Date:</strong> September 19, 5:45 PM - 9 PM EDT</p>
-            <p><strong>Location:</strong> Girls Inc of New Hampshire, 27 Burke St, Nashua, NH 03060, USA</p>
-        </div>
-        <!-- Add more events here -->
+        <div id="news-container"></div> <!-- This is where Mustache will render the news updates -->
     </section>
 
     <footer>
         <p>Southern New Hampshire Competitive Volleyball © 2024</p>
     </footer>
+
+    <script>
+        var template = `
+            {{#events}}
+                <div class="event">
+                    {{#title}}<a href="#">{{title}}</a>{{/title}}
+                    {{#date}}<p><strong>Date:</strong> {{date}}</p>{{/date}}
+                    {{#location}}<p><strong>Location:</strong> {{location}}</p>{{/location}}
+                </div>
+            {{/events}}
+        `;
+
+        var data = {
+            events: [
+                { title: "9/19 Indoor Volleyball at Girls Inc of New Hampshire (Nashua)", date: "September 19, 5:45 PM - 9 PM EDT", location: "Girls Inc of New Hampshire, 27 Burke St, Nashua, NH 03060, USA" },
+                { title: "", date: "", location: "" }, // Blank event will not render
+                { title: "League Update", date: "October 1st", location: "" }, // Location will not render since it's empty
+                { title: "New Event Announcement", date: "", location: "" } // Only the title will render
+            ]
+        };
+
+        var rendered = Mustache.render(template, data);
+        document.getElementById('news-container').innerHTML = rendered;
+    </script>
 </body>
 </html>
