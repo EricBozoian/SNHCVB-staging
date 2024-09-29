@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Southern New Hampshire Competitive Volleyball</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+ <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script> <!-- Mustache.js -->
+</head>
+<body>
+    <!-- Header Section with Logo and Title -->
+    <header>
+        <img src="SNHCVB-app-192x192.png" alt="Southern New Hampshire Competitive Volleyball Logo" class="logo">
+        <h1>Southern New Hampshire Competitive Volleyball</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+        <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="League.html">League</a></li>
+            <li><a href="#">Tournaments</a>
+                <ul class="dropdown">
+                    <li><a href="yankee-tournaments.html">Yankee Tournaments</a></li>
+                    <li><a href="SNHCVB-Tournaments.html">SNHCVB Tournaments</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Drop-In Indoor VB</a>
+                <ul class="dropdown">
+                    <li><a href="Co-ed Drop-in Nights.html">Weeknight Co-ed</a></li>
+                    <li><a href="RCO Drop-in Nights.html">Weeknight RCO</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Drop-In Outdoor VB</a>
+                <ul class="dropdown">
+                    <li><a href="Grass Drop-in.html">Weeknight Grass</a></li>
+                </ul>
+            </li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="Sponsors.html">Sponsors</a></li>
+        </ul>
+    </nav>
+   <!-- All Events Section -->
+    <section class="league">
+        <h2>All Events</h2>
+        <div id="events-container"></div> <!-- Mustache will render the events here -->
+    </section>    <!-- Footer Section -->
+    <footer>
+        <p>&copy; Southern New Hampshire Competitive Volleyball © 2024</p>
+    </footer>
+ <!-- Mustache.js Script to Render Events -->
+    <script>
+        var template = `
+            {{#events}}
+                <div class="event">
+                    {{#title}}<a href="{{link}}" target="_blank">{{title}}</a>{{/title}}
+                    {{#date}}<p><strong>Date:</strong> {{date}}</p>{{/date}}
+                    {{#location}}<p><strong>Location:</strong> {{location}}</p>{{/location}}
+                    {{#description}}<p>{{description}}</p>{{/description}}
+                </div>
+            {{/events}}
+        `;
+
+        var data = {
+            events: [
+                { title: "9/19 Indoor Volleyball at Girls Inc of New Hampshire (Nashua)", date: "September 19, 5:45 PM - 9 PM EDT", location: "Girls Inc of New Hampshire, 27 Burke St, Nashua, NH 03060, USA", link: "https://example.com", description: "This is a reminder to arrive on time for warm-ups!" },
+                { title: "League Update", date: "October 1st", location: "", link: "", description: "Our fall league is starting soon! Make sure to sign up." },
+                { title: "New Event Announcement", date: "", location: "", link: "https://example.com/new-event", description: "We are excited to announce a new event. Details coming soon." },
+                { title: "General Announcement", date: "", location: "", link: "", description: "There will be no games next week due to facility maintenance." },
+                { title: "Special Event 1", date: "October 10th", location: "Greeley Park", link: "https://example.com/event1", description: "Join us for our first special event of the season!" },
+                { title: "Special Event 2", date: "October 20th", location: "Nashua Sports Center", link: "https://example.com/event2", description: "Second special event coming soon!" },
+                { title: "Tournament Announcement", date: "", location: "", link: "https://example.com/tournament", description: "Details about the upcoming tournament." },
+                { title: "Practice Session", date: "October 5th", location: "Girls Inc", link: "https://example.com/practice", description: "Practice session for all players." },
+                { title: "Skills Workshop", date: "October 15th", location: "Sports Complex", link: "https://example.com/workshop", description: "A skills workshop for volleyball enthusiasts." },
+                { title: "Holiday Event", date: "December 20th", location: "Girls Inc", link: "https://example.com/holiday", description: "Celebrate the holidays with volleyball!" },
+                { title: "Co-ed Tournament", date: "November 1st", location: "Girls Inc", link: "https://example.com/co-ed-tournament", description: "Co-ed tournament starting November." },
+                { title: "End of Year Tournament", date: "December 31st", location: "Nashua Sports Center", link: "https://example.com/end-of-year", description: "End the year with a big tournament!" },
+                { title: "Fundraiser Event", date: "November 15th", location: "Sports Center", link: "https://example.com/fundraiser", description: "Help raise funds for the upcoming season." },
+                { title: "Championship Event", date: "December 10th", location: "Championship Court", link: "https://example.com/championship", description: "The ultimate championship event!" },
+                { title: "Fall Season Kickoff", date: "September 30th", location: "Girls Inc", link: "https://example.com/kickoff", description: "Kick off the fall season with a bang!" },
+                { title: "Community Event", date: "October 25th", location: "Community Center", link: "https://example.com/community", description: "Join the community volleyball event." }
+            ]
+        };
+
+        var rendered = Mustache.render(template, data);
+        document.getElementById('events-container').innerHTML = rendered;
+    </script>
+</body>
+</html>
