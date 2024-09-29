@@ -206,10 +206,10 @@
     <footer>
         <p>&copy; Southern New Hampshire Competitive Volleyball © 2024</p>
     </footer>
-<div id="target"></div>
-    <!-- Mustache.js Rendering Script -->
+<!-- Mustache.js Rendering Script -->
     <script>
-        var data = {
+        // Define the data object
+        const data = {
             eventTitle: "October 26th Volleyball Tournament",
             eventDateTime: "October 26th, 5:00 PM - 9:00 PM EDT",
             eventLocation: "Girls Inc of New Hampshire, 27 Burke St, Nashua, NH",
@@ -222,11 +222,14 @@
             ticketPrice: "$195"
         };
 
-        // Rendering the Mustache.js template with the data
-        var template = document.getElementById('template').innerHTML;
-        var rendered = Mustache.render(template, data);
-        document.getElementById('target').innerHTML = rendered;
+        // Get the HTML content that will be used as a template
+        const template = document.body.innerHTML;
+
+        // Render the template by merging it with the data object
+        const rendered = Mustache.render(template, data);
+
+        // Replace the body content with the rendered HTML
+        document.body.innerHTML = rendered;
     </script>
 </body>
-</html>
-
+</html
