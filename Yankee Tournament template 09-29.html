@@ -134,7 +134,7 @@
         <h3>Important:</h3>
         <p>
             <span class="emoji">&#9888;&#65039; </span> <!-- Emoji at the beginning -->
-            {{tournamentDescription}}
+            {{tournamentLevelDescription}}
             <span class="emoji">&#9888;&#65039; </span> <!-- Emoji at the end -->
         </p>
     </div>
@@ -149,7 +149,7 @@
     <!-- Payment and Registration Information -->
     <div class="about-league">
         <h3>Payment and Registration information:</h3>
-        <p>{{ticketPrice}} per team (Venmo or Paypal). Paying directly to Eric Bozoian via Venmo (@SNHCVB) or PayPal (https://paypal.me/SNHCVB?country.x=US&locale.x=en_US). Note: Ensure to enter each player's information during registration to be eligible for the tournament.</p>
+        <p>{{ticketPrice}} per team (Venmo or Paypal). Paying directly to Eric Bozoian via Venmo ({{Venmopaymentlink}}) or PayPal ({{Paypalpaymentlink}}). Note: Ensure to enter each player's information during registration to be eligible for the tournament.</p>
     </div>
 
     <!-- Tournament Schedule -->
@@ -217,9 +217,11 @@
             signupLink: "https://signupform.com",
             signupListLink: "https://signupform.com/list",
             yankeeTournamentLink: "http://yankee.org/tournaments/w-c-10-26-2024",
-            tournamentDescription: "The total points of your team must equal 27. For example, you can have Three C+ players (4 points each), and Three B- players (5 points each), which equals 27. If you have any questions regarding your rating, please message the tournament director, Eric Bozoian.",
+            tournamentLevelDescription: "The total points of your team must equal 27. For example, you can have Three C+ players (4 points each), and Three B- players (5 points each), which equals 27. If you have any questions regarding your rating, please message the tournament director, Eric Bozoian.",
             ticketPrice: "$195",
-            netheight:"Women's"
+            netheight: "Women's",
+            Venmopaymentlink: "@SNHCVB",
+            Paypalpaymentlink: "https://paypal.me/SNHCVB?country.x=US&locale.x=en_US",
         };
 
         // Get the HTML content that will be used as a template
