@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southern NH Competitive Volleyball - League</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="SNHCVB-app-192x192.png" alt="Southern NH Competitive Volleyball Logo" class="logo">
+        <h1>Southern New Hampshire Competitive Volleyball</h1>
+        <p>A place for competitive volleyball</p>
+        <a href="All Events.html">
+            <button class="btn">All Events</button>
+        </a>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="League.html">League</a></li>
+            <li><a href="#">Tournaments</a>
+                <ul class="dropdown">
+                    <li><a href="yankee-tournaments.html">Yankee Tournaments</a></li>
+                    <li><a href="SNHCVB-Tournaments.html">SNHCVB Tournaments</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Drop-In Indoor VB</a>
+                <ul class="dropdown">
+                    <li><a href="Co-ed Drop-in Nights.html">Weeknight Co-ed</a></li>
+                    <li><a href="RCO Drop-in Nights.html">Weeknight RCO</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Drop-In Outdoor VB</a>
+                <ul class="dropdown">
+                    <li><a href="Grass Drop-in.html">Weeknight Grass</a></li>
+                </ul>
+            </li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="Sponsors.html">Sponsors</a></li>
+        </ul>
+    </nav>
+
+    <!-- League Section -->
+    <section class="league">
+        <h2>{{eventTitle}}</h2>
+        <img src="Tournament of South New Hampshire 1600x800.png" alt="League Action">
+        <br>
+        <!-- Button wrapped inside an anchor tag to redirect to the form link -->
+        <a href="{{signupLink}}" target="_blank">
+            <button class="btn">{{signupButtonText}}</button>
+        </a>
+    </section>
+
+    <h1 class="c16" id="h.hfwoghfugl8m">
+        <span class="c5 c18 c20">{{eventTitle}}</span>
+    </h1>
+
+    <p class="c1">
+        <span class="c0">{{eventDateTime}}</span>
+    </p>
+    <p class="c1">
+        <span class="c0">{{eventLocation}}</span>
+    </p>
+    <p class="c1">
+        <span class="c0">{{eventCity}}</span>
+    </p>
+
+    <h2 class="c12" id="h.pvmrdnhgqzfa">
+        <span class="c3">Event description</span>
+    </h2>
+
+    <p class="c1 c11">
+        <span class="c5 c4">{{eventDescription}}</span>
+    </p>
+
+    <p class="c1">
+        <span class="c4">&#128064; &#128073; Click </span>
+        <span class="c9 c25">
+            <a class="c10" href="{{signupListLink}}">HERE</a>
+        </span>
+        <span class="c5 c4"> to check out who’s signed up so far! &#128064;</span>
+    </p>
+
+</section>
+<!-- Yankee Tournament Format -->
+<div class="about-league">
+    <h3>Please also register at this site for this tournament:</h3>
+    <p>
+        <a href="{{yankeeTournamentLink}}" target="_blank">
+            Register for the tournament here
+        </a>
+    </p>
+</div>
+<!-- Tournament Level Description -->
+<div class="about-league">
+    <h3>Important:</h3>
+    <p>
+        <span class="emoji">&#9888;&#65039; </span>
+        {{tournamentDescription}}
+        <span class="emoji">&#9888;&#65039; </span>
+    </p>
+</div>
+<!-- Ticket Options -->
+<div class="info-box">
+    <h3>Ticket Options:</h3>
+    <ul>
+        <li>{{ticketPrice}} per team (Venmo or Paypal).</li>
+    </ul>
+</div>
+<!-- Payment and Registration Information -->
+<div class="about-league">
+    <h3>Payment and Registration information:</h3>
+    <p>{{ticketPrice}} per team (Venmo or Paypal). Paying directly to Eric Bozoian via Venmo (@SNHCVB) or PayPal (https://paypal.me/SNHCVB?country.x=US&locale.x=en_US). Note: Ensure to enter each player's information during registration to be eligible for the tournament.</p>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; Southern New Hampshire Competitive Volleyball © 2024</p>
+</footer>
+
+<!-- Mustache.js Rendering Script -->
+<script>
+    var data = {
+        eventTitle: "October 26th Volleyball Tournament",
+        signupLink: "https://signupform.com",
+        signupButtonText: "Sign Up Here",
+        eventDateTime: "October 26th, 5:00 PM - 9:00 PM EDT",
+        eventLocation: "Girls Inc of New Hampshire, 27 Burke St, Nashua, NH",
+        eventCity: "Nashua, NH",
+        eventDescription: "Join us for an exciting volleyball tournament this October!",
+        signupListLink: "https://signupform.com/list",
+        yankeeTournamentLink: "http://yankee.org/tournaments/w-c-10-26-2024",
+        tournamentDescription: "The total points of your team must equal 27. For example, you can have Three C+ players (4 points each), and Three B- players (5 points each) which equals 27. If you have any questions regarding your rating, please message the tournament director Eric Bozoian.",
+        ticketPrice: "$195"
+    };
+
+    // Rendering the Mustache.js template with the data
+    var template = document.getElementById('template').innerHTML;
+    var rendered = Mustache.render(template, data);
+    document.getElementById('target').innerHTML = rendered;
+</script>
+</body>
+</html>
