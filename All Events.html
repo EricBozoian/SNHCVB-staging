@@ -64,25 +64,26 @@
         `;
 
         var data = {
-            events: [
-                { title: "", date: "", location: "", link: "", description: "" },
-                { title: "", date: "", location: "", link: "", description: "" },
-                { title: "", date: "", location: "", link: "", description: "" },
-                { title: "", date: "", location: "", link: "", description: "" },
-                { title: "", date: "", location: "", link: "", description: "" },
-                { title: "", date: "", location: "", link: "", description: "" },
-                { title: "", date: "", location: "", link: "", description: "" },
-                { title: "", date: "", location: "", link: "", description: "" },
-                { title: "", date: "", location: "", link: "", description: "" },
-                { title: "", date: "", location: "", link: "", description: "" },
-                { title: "", date: "", location: "", link: "", description: "" },
-                { title: "", date: "", location: "", link: "", description: "" },
-                { title: "", date: "", location: "", link: "", description: "" },
-                { title: "", date: "", location: "", link: "", description: "" },
-                { title: "", date: "", location: "", link: "", description: "" },
-                { title: "", date: "", location: "", link: "", description: "" }
-            ]
-        };
+    events: [
+        { title: "10/03 Indoor Volleyball at Girls Inc of New Hampshire", date: "10/03/2024", location: "Girls Inc of New Hampshire, Nashua", link: "https://ericbozoian.github.io/SNHCVB-staging/10-03%20Indoor%20Volleyball%20at%20Girls%20Inc%20of%20New%20Hampshire.html", description: "$12 for 3 hours of play, 5:45 PM - 9 PM" },
+        { title: "", date: "", location: "", link: "", description: "" },
+        { title: "", date: "", location: "", link: "", description: "" },
+        { title: "", date: "", location: "", link: "", description: "" },
+        { title: "", date: "", location: "", link: "", description: "" },
+        { title: "", date: "", location: "", link: "", description: "" },
+        { title: "", date: "", location: "", link: "", description: "" },
+        { title: "", date: "", location: "", link: "", description: "" },
+        { title: "", date: "", location: "", link: "", description: "" },
+        { title: "", date: "", location: "", link: "", description: "" },
+        { title: "", date: "", location: "", link: "", description: "" },
+        { title: "", date: "", location: "", link: "", description: "" },
+        { title: "", date: "", location: "", link: "", description: "" },
+        { title: "", date: "", location: "", link: "", description: "" },
+        { title: "", date: "", location: "", link: "", description: "" },
+        { title: "", date: "", location: "", link: "", description: "" }
+    ]
+};
+
 
         var rendered = Mustache.render(template, data);
         document.getElementById('events-container').innerHTML = rendered;
