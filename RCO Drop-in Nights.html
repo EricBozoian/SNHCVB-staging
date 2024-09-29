@@ -6,6 +6,7 @@
     <title>Southern NH Competitive Volleyball - League</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script> <!-- Mustache.js included -->
 </head>
 <body>
     <header>
@@ -66,17 +67,68 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor iaculis dolor, eu mollis metus. Aliquam erat volutpat. Etiam molestie commodo tellus, at commodo odio pellentesque quis.</p>
         </div>
 
-        <!-- Event Information -->
-         <div class="event">
-            <a href="#">9/19 Indoor Volleyball at Girls Inc of New Hampshire (Nashua)</a>
-            <p><strong>Date:</strong> September 19, 5:45 PM - 9 PM EDT</p>
-            <p><strong>Location:</strong> Girls Inc of New Hampshire, 27 Burke St, Nashua, NH 03060, USA</p>
-        </div>
-    </main>
+        <!-- Event Information (Mustache.js template placeholder) -->
+        <div id="events-container"></div> <!-- Mustache will render the events here -->
+    </section>
 
     <!-- Footer Section -->
      <footer>
         <p>Southern New Hampshire Competitive Volleyball © 2024</p>
     </footer>
+     <script>
+        var template = `
+            {{#events}}
+                <div class="event">
+                    {{#title}}<a href="{{link}}" target="_blank">{{title}}</a>{{/title}}
+                    {{#date}}<p><strong>Date:</strong> {{date}}</p>{{/date}}
+                    {{#location}}<p><strong>Location:</strong> {{location}}</p>{{/location}}
+                    {{#description}}<p>{{description}}</p>{{/description}}
+                </div>
+            {{/events}}
+        `;
+
+        var data = {
+            events: [
+                { 
+                    title: "9/19 Indoor Volleyball at Girls Inc of New Hampshire (Nashua)", 
+                    date: "September 19, 5:45 PM - 9 PM EDT", 
+                    location: "Girls Inc of New Hampshire, 27 Burke St, Nashua, NH 03060, USA", 
+                    link: "https://example.com", 
+                    description: "This is a reminder to arrive on time for warm-ups!" 
+                },
+                { 
+                    title: "League Update", 
+                    date: "October 1st", 
+                    location: "", 
+                    link: "", 
+                    description: "Our fall league is starting soon! Make sure to sign up." 
+                },
+                { 
+                    title: "New Event Announcement", 
+                    date: "", 
+                    location: "", 
+                    link: "https://example.com/new-event", 
+                    description: "We are excited to announce a new event. Details coming soon." 
+                },
+                { 
+                    title: "General Announcement", 
+                    date: "", 
+                    location: "", 
+                    link: "", 
+                    description: "There will be no games next week due to facility maintenance." 
+                },
+                { 
+                    title: "Special Event", 
+                    date: "November 1st", 
+                    location: "Nashua YMCA", 
+                    link: "https://example.com/special-event", 
+                    description: "Join us for a special night of volleyball at the YMCA!" 
+                }
+            ]
+        };
+
+        var rendered = Mustache.render(template, data);
+        document.getElementById('events-container').innerHTML = rendered;
+    </script>
 </body>
 </html>
