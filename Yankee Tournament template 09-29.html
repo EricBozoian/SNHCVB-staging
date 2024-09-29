@@ -46,17 +46,18 @@
         </ul>
     </nav>
 
-<!-- League Section -->
-<section class="league">
-    <h2>{{eventTitle}}</h2>
-    <img src="{{eventImageSrc}}" alt="{{eventImageAlt}}">
-    <br> <!-- Add break after the image -->
-    <!-- Button wrapped inside an anchor tag to redirect to the form link -->
-     <!-- Button wrapped inside an anchor tag to redirect to the form link -->
-    <a href="{{signupLink}}" target="_blank">
-        <button class="btn">Sign Up Here</button>
-    </a> <!-- Closing anchor tag here -->
-</section>
+    <!-- Template that will be used by Mustache.js -->
+    <script id="template" type="x-tmpl-mustache">
+    <!-- League Section -->
+    <section class="league">
+        <h2>{{eventTitle}}</h2>
+        <img src="Tournament of South New Hampshire 1600x800.png" alt="League Action">
+        <br> <!-- Add break after the image -->
+        <!-- Button wrapped inside an anchor tag to redirect to the form link -->
+        <a href="{{signupLink}}" target="_blank">
+            <button class="btn">Sign Up Here</button>
+        </a> <!-- Closing anchor tag here -->
+    </section>
 
 <h1 class="c16" id="h.hfwoghfugl8m">
     <span class="c5 c18 c20">{{eventTitle}}</span>
