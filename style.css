@@ -541,4 +541,11 @@ img {
   color: #2c3e50;
   font-weight: bold;
 }
+.event h2 {
+  font-size: 2.5em; /* Make the font size larger */
+  color: #003366;  /* Set the blue color */
+  margin-bottom: 20px; /* Add some spacing below */
+  font-weight: bold; /* Ensure the text is bold */
+}
+
 
