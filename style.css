@@ -496,4 +496,48 @@ img {
 #events-container p {
     text-align: left;
 }
+/* General styling for the event container */
+#news-container {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+/* Styling for individual event entries */
+.event {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Title styling (with or without links) */
+.event h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.event a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+.event a:hover {
+  text-decoration: underline;
+}
+
+/* Date, location, and description styling */
+.event p {
+  font-size: 16px;
+  color: #34495e;
+  line-height: 1.6;
+}
+
+/* Emphasize important labels like "Date" and "Location" */
+.event strong {
+  color: #2c3e50;
+  font-weight: bold;
+}
 
