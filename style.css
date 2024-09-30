@@ -486,3 +486,14 @@ img {
     border: 1px solid #ccc;
     background-color: #f9f9f9;
 }
+#events-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#events-container p {
+    text-align: left;
+}
+
