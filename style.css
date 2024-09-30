@@ -138,8 +138,8 @@ h2 {
 
 /* Update the .updates class to ensure proper alignment */
 .updates {
-    margin-top: 20px;
-    text-align: center;
+    max-width: 1200px; /* Adjust this to match your desired width */
+    margin: 0 auto; /* Center it horizontally */
 }
 
 .event a {
@@ -505,11 +505,12 @@ img {
 
 /* Styling for individual event entries */
 .event {
-  margin-bottom: 20px;
-  padding: 15px;
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional, for a clean look */
+    max-width: 100%; /* Ensure the events don't go wider than their container */
 }
 
 /* Title styling (with or without links) */
