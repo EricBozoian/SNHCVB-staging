@@ -63,13 +63,13 @@
             {{/events}}
         `;
 
-     var data = {
+var data = {
     events: [
         { title: "10/03 Indoor Volleyball at Girls Inc of New Hampshire", date: "10/03/2024", location: "Girls Inc of New Hampshire, Nashua", link: "https://ericbozoian.github.io/SNHCVB-staging/10-03%20Indoor%20Volleyball%20at%20Girls%20Inc%20of%20New%20Hampshire.html", description: "$12 for 3 hours of play, 5:45 PM - 9 PM" },
         { title: "10/10 Indoor Volleyball at Girls Inc of New Hampshire", date: "10/10/2024", location: "Girls Inc of New Hampshire, Nashua", link: "https://ericbozoian.github.io/SNHCVB-staging/10-10%20co-ed%20drop%20in%2009-28.html", description: "$12 for 3 hours of play, 5:45 PM - 9 PM" },
         { title: "10/17 Indoor Volleyball at Girls Inc of New Hampshire", date: "10/17/2024", location: "Girls Inc of New Hampshire, Nashua", link: "https://ericbozoian.github.io/SNHCVB-staging/10-17%20co-ed%20drop%20in%2009-28.html", description: "$12 for 3 hours of play, 5:45 PM - 9 PM" },
         { title: "10/24 Indoor Volleyball at Girls Inc of New Hampshire", date: "10/24/2024", location: "Girls Inc of New Hampshire, Nashua", link: "https://ericbozoian.github.io/SNHCVB-staging/10-24%20co-ed%20drop%20in%20temp%2009-28.html", description: "$12 for 3 hours of play, 5:45 PM - 9 PM" },
-        { title: "", date: "", location: "", link: "", description: "" },
+        { title: "10/31 Indoor Volleyball at Girls Inc of New Hampshire", date: "10/31/2024", location: "Girls Inc of New Hampshire, Nashua", link: "https://ericbozoian.github.io/SNHCVB-staging/10-31%20co-ed%20drop%20in%20temp%2009-28.html", description: "$12 for 3 hours of play, 5:45 PM - 9 PM" },
         { title: "", date: "", location: "", link: "", description: "" },
         { title: "", date: "", location: "", link: "", description: "" },
         { title: "", date: "", location: "", link: "", description: "" },
@@ -83,7 +83,6 @@
         { title: "", date: "", location: "", link: "", description: "" }
     ]
 };
-
         var rendered = Mustache.render(template, data);
         document.getElementById('events-container').innerHTML = rendered;
     </script>
