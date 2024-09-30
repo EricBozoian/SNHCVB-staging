@@ -13,9 +13,7 @@
         <img src="SNHCVB-app-192x192.png" alt="Southern NH Competitive Volleyball Logo" class="logo">
         <h1>Southern New Hampshire Competitive Volleyball</h1>
         <p>A place for competitive volleyball</p>
-        <a href="All Events.html">
-    <button class="btn">All Events</button>
-</a>
+        <a href="All Events.html" class="btn">All Events</a>
     </header>
 
     <!-- Navigation Menu -->
@@ -48,7 +46,7 @@
     <!-- News and Updates Section -->
     <section class="updates">
         <h2>News and Updates:</h2>
-        <div id="news-container"></div> <!-- This is where Mustache will render the news updates -->
+        <div id="news-container"></div> <!-- Corrected ID -->
     </section>
 
     <footer>
@@ -74,15 +72,16 @@
 
     var data = {
         events: [
-            { title: "Our New Website is Live!", date: "09/30/2024", location: "", link: "", description: "We are excited to announce that our new website is officially up and running! You can now find all our events easily in one place. Southern New Hampshire Competitive Volleyball has switched to a more user-friendly platform to ensure you have the best experience when registering for events. In a big change, we are transitioning from Humanitix to our very own event-hosting platform right here on the website! Built by Eric in his spare time, this platform will make it easier for you to stay informed, sign up, and keep track of upcoming games and tournaments. Check out the new event sign-up process and enjoy the streamlined registration experience. Thank you for being a part of our community, and we can’t wait to see you on the court!" },
-            { title: "", date: "", location: "", link: "", description: "" },
-            { title: "", date: "", location: "", link: "", description: "" },
-            { title: "", date: "", location: "", link: "", description: "" }
+            { title: "Our New Website is Live!", date: "09/30/2024", location: "", link: "", description: "We are excited to announce that our new website is officially up and running! You can now find all our events easily in one place. Southern New Hampshire Competitive Volleyball has switched to a more user-friendly platform to ensure you have the best experience when registering for events." },
+            { title: "", date: "", location: "", link: "", description: "" }, // Blank event
+            { title: "", date: "", location: "", link: "", description: "" }, // Blank event
+            { title: "", date: "", location: "", link: "", description: "" }, // Blank event
+            { title: "", date: "", location: "", link: "", description: "" }  // Blank event
         ]
     };
 
     var rendered = Mustache.render(template, data);
-    document.getElementById('events-container').innerHTML = rendered;
+    document.getElementById('news-container').innerHTML = rendered; // Changed to 'news-container'
 </script>
 </body>
 </html>
