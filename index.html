@@ -52,23 +52,20 @@
     <footer>
         <p>Southern New Hampshire Competitive Volleyball © 2024</p>
     </footer>
-
 <script>
     var template = `
         {{#events}}
-            {{#title}} <!-- Only render if title is present -->
             <div class="event">
                 {{#link}}
-                    <a href="{{link}}" target="_blank">{{title}}</a> <!-- Title inside the link -->
+                    <a href="{{link}}" target="_blank"><h2>{{title}}</h2></a> <!-- Title inside the link and h2 -->
                 {{/link}}
                 {{^link}}
-                    <p><strong>{{title}}</strong></p> <!-- Use strong tags for non-link titles -->
+                    <h2>{{title}}</h2> <!-- Use h2 for non-link titles -->
                 {{/link}}
                 {{#date}}<p><strong>Date:</strong> {{date}}</p>{{/date}} <!-- Add Date as strong -->
                 {{#location}}<p><strong>Location:</strong> {{location}}</p>{{/location}} <!-- Add Location as strong -->
                 {{#description}}<p>{{description}}</p>{{/description}} <!-- Add description text -->
             </div>
-            {{/title}} <!-- Close the block so only non-empty events are rendered -->
         {{/events}}
     `;
     
