@@ -547,12 +547,7 @@ img {
   margin-bottom: 20px; /* Add some spacing below */
   font-weight: bold; /* Ensure the text is bold */
 }
-*:empty {
-    display: none;
-}
-.event:empty {
-    display: none;
-}
+
 
 
 
