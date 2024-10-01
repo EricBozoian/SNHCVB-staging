@@ -550,6 +550,10 @@ img {
 *:empty {
     display: none;
 }
+.event:empty {
+    display: none;
+}
+
 
 
 
